@@ -21,7 +21,7 @@ To use the Google Vision API, you have to sign up for a Google Compute Engine Ac
 ![google cloud](https://images.idgesg.net/images/article/2018/04/google-vision-api-screen-1-100755937-medium.jpg?auto=webp&quality=85,70)
 Here, I’m using a simple API key that I can use with the command line tool Curl (if you prefer, you can use a different tool able to call REST APIs):
 
-Save the key it generates to a text file 
+Save the key it generates to a json file 
 
 
 Install the dependencies and devDependencies and start the server.
