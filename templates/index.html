@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Cloud Vision</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="Cloud Vision" />
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
+    </script>
+    <!-- Custom Theme files -->
+    <link href="{{ url_for('static', filename='css/bootstrap.css') }}" type="text/css" rel="stylesheet" media="all">
+    <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+    <!-- //online-fonts -->
+</head>
+
+<body>
+
+    <section class="main-banner" id="home">
+        <div class="layer">
+            <div class="header-wthree-top-w3layouts text-right">
+                <h1 class="logo"><a href="/">PM CLOUD VISION</a></h1>
+                <ul class="list-unstyled apps-lists text-right">
+                    <li>
+                        <a href="/textdetect/" class="btn"><span class="fa fa-file-text-o mr-2" aria-hidden="true"></span>Text Extraction</a>
+                    </li>
+                    <li class="ml-2">
+                        <a href="/facedetect/" class="btn"><span class="fa fa-user mr-2" aria-hidden="true"></span>Face Detection</a>
+                    </li>
+                </ul>
+                <ul id="menu">
+                    <li>
+                        <input id="check02" type="checkbox" name="menu" />
+                        <label for="check02"><span class="fa fa-bars" aria-hidden="true"></span></label>
+                        <ul class="submenu">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#about" class="scroll">Why</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <div class="baner-info-w3layouts text-center">
+                    <h3>Vision AI</h3>
+                    <h6 class="mx-auto mt-md-4 mt-3">Derive insights from your images in the cloud or at the edge with AutoML Vision or use pre-trained Vision API models to detect emotion, understand text, and more.</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
+    <!--/ banner-bottom-w3ls -->
+    <section class="banner-bottom-w3ls py-lg-5 py-4" id="about">
+        <div class="container py-sm-5 py-4">
+            <div class="ab-grids row text-left pb-3">
+                <div class="col-lg-6 pt-lg-5">
+                    <img src="{{ url_for('static', filename='images/app1.png') }}" class="img-fluid" alt="mobile-image">
+                </div>
+                <div class="col-lg-6 pl-lg-5">
+                    <div class="header-wthree pt-lg-5 pt-3 text-left">
+                        <h3 class="tittle mb-lg-4 mb-3">Why Cloud Vision ?</h3>
+                    </div>
+                    <p>Derive insights from your images in the cloud or at the edge with AutoML Vision or use pre-trained Vision API models to detect emotion, understand text, and more.</p>
+                    <ul class="tic-info list-unstyled">
+                        <li>
+
+                            <span class="fa fa-check mr-2"></span> Use machine learning to understand your images with industry-leading prediction accuracy
+
+                        </li>
+                        <li>
+
+                            <span class="fa fa-check mr-2"></span> Train machine learning models that classify images by your custom labels using AutoML Vision
+
+                        </li>
+                        <li>
+
+                            <span class="fa fa-check mr-2"></span> Detect objects and faces, read handwriting, and build valuable image metadata with Vision API
+
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <!--// banner-bottom-w3ls-->
+
+
+
+    <!-- footer -->
+    <footer class="footer py-sm-5 py-5">
+        <div class="container py-xl-5 py-lg-3">
+
+            <div class="logo-2 text-center mt-4">
+                <h2><a class="logo" href="/">PM Cloud Vision</a></h2>
+            </div>
+ 
+            <!-- copyright -->
+            <p class="copy-right-grids text-li text-center my-sm-4 my-4">© 2021 PM Cloud Vision. All Rights Reserved 
+            </p>
+            <div class="top_move text-center">
+                <a href="#home" class="move-top"><span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a>
+            </div>
+            <!-- //copyright -->
+        </div>
+    </footer>
+    <!-- footer -->
+
+</body>
+
+</html>
