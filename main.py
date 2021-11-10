@@ -115,7 +115,14 @@ def display_face(filename):
 	face_response = client.face_detection(image=image)
 	face_content = face_response.face_annotations
 	#face_content[0].detection_confidence
-	return render_template('message.html',name=face_content[0].detection_confidence,title="Face Prediction") 
+	likelihood_name = ('UNKNOWN', 'VERY_UNLIKELY', 'UNLIKELY', 'POSSIBLE',
+                       'LIKELY', 'VERY_LIKELY')
+	detectface=[]
+	for face in face_content:
+		detectface.append('anger: {}'.format(likelihood_name[face.anger_likelihood]))
+		detectface.append('joy: {}'.format(likelihood_name[face.joy_likelihood]))
+		detectface.append('surprise: {}'.format(likelihood_name[face.surprise_likelihood]))
+	return render_template('message.html',name=face_content[0].detection_confidence,title="Face Prediction",facee=detectface) 
 
 if __name__ == "__main__":
     app.run()
